@@ -1,6 +1,6 @@
 <?php
 
-namespace fize\security;
+namespace fize\plus;
 
 /**
  * 基于角色的数据库方式验证类

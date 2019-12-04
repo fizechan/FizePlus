@@ -1,6 +1,6 @@
 <?php
 
-namespace fize\security;
+namespace fize\plus;
 
 /**
  *  Discuz!自定义的一个加解密算法

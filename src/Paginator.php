@@ -1,7 +1,7 @@
 <?php
 
 
-namespace fize\misc;
+namespace fize\plus;
 
 /**
  * 分页显示类
@@ -399,8 +399,7 @@ class Paginator
         $this->makeSureNP_();
         $this->Recordcount = count($array);
         $this->PageCount = (int)floor($this->Recordcount / $this->PageSize);
-        $out = array_slice($array, $this->PageNow * $this->PageSize, $this->PageSize);
-        return $out;
+        return array_slice($array, $this->PageNow * $this->PageSize, $this->PageSize);
     }
 
     /**

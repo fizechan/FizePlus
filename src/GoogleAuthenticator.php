@@ -1,6 +1,6 @@
 <?php
 
-namespace fize\security;
+namespace fize\plus;
 
 use Exception;
 
@@ -8,7 +8,6 @@ use Exception;
  * 谷歌二次验证
  * @todo 非底层功能，待转移到其他位置
  * @notice 待移动到其他位置
- * @package fize\security
  */
 class GoogleAuthenticator
 {
