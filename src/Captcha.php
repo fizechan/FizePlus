@@ -156,6 +156,7 @@ class Captcha
         $_SESSION[$key] = $code;
 
         // 输出图像
+        header('Content-Type: png');
         imagepng($this->im);
         imagedestroy($this->im);
     }
