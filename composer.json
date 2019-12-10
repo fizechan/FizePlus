@@ -14,6 +14,10 @@
     "require-dev": {
         "phpunit/phpunit": "^8.0.0"
     },
+    "suggest": {
+        "ext-gd": "*",
+        "ext-iconv": "*"
+    },
 	"autoload": {
         "psr-4": {
             "fize\\plus\\": "src"

@@ -4,7 +4,7 @@
 namespace fize\plus;
 
 /**
- * 分页显示类
+ * 分页显示
  */
 class Paginator
 {
