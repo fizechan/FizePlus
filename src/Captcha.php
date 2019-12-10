@@ -146,7 +146,7 @@ class Captcha
             for ($i = 0; $i < $this->config['length']; $i++) {
                 $code[$i] = $this->config['codeSet'][mt_rand(0, strlen($this->config['codeSet']) - 1)];
                 $codeNX += mt_rand($this->config['fontSize'] * 1.2, $this->config['fontSize'] * 1.6);
-                imagettftext($this->im, $this->config['fontSize'], mt_rand(-20, 20), $codeNX, $this->config['fontSize'] * 1.4, $this->color, $this->fontttf, $code[$i]);
+                imagettftext($this->im, $this->config['fontSize'], mt_rand(-20, 20), $codeNX, $this->config['fontSize'] * 1.4, $this->color, $this->config['fontttf'], $code[$i]);
             }
         }
 
