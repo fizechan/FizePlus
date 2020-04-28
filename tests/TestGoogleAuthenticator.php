@@ -5,7 +5,7 @@ namespace app\controller;
 use fize\security\GoogleAuthenticator;
 use PHPUnit\Framework\TestCase;
 
-class GoogleAuthenticatorTest extends TestCase
+class TestGoogleAuthenticator extends TestCase
 {
 
     public function testGetCode()

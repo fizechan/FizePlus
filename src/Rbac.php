@@ -11,7 +11,7 @@ class Rbac
 
     /**
      * 获取要判断的用户记录
-     * @param mixed $map 查询条件
+     * @param mixed  $map   查询条件
      * @param string $table 用户表名
      * @return mixed
      */
@@ -207,7 +207,7 @@ class Rbac
 
     /**
      * 权限认证的过滤器方法
-     * @param string $groupName 分组名
+     * @param string $groupName  分组名
      * @param string $moduleName 模块名
      * @param string $actionName 操作名
      * @return boolean
@@ -262,7 +262,7 @@ class Rbac
 
     /**
      * 检查RBAC
-     * @param array $p_map 用户条件MAP
+     * @param array  $p_map   用户条件MAP
      * @param string $p_ident 用户标识列名，用于判别超级用户
      * @return mixed
      */

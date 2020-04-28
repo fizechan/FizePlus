@@ -6,7 +6,7 @@ use Exception;
 
 /**
  * 谷歌二次验证
- * @todo 非底层功能，待转移到其他位置
+ * @todo   非底层功能，待转移到其他位置
  * @notice 待移动到其他位置
  */
 class GoogleAuthenticator
@@ -22,6 +22,7 @@ class GoogleAuthenticator
      * @param int $secretLength 密钥长度
      * @return string
      * @throws Exception
+     * @since PHP7.0
      */
     public function createSecret($secretLength = 16)
     {
@@ -42,8 +43,8 @@ class GoogleAuthenticator
 
     /**
      * 根据密钥取得验证码
-     * @param string $secret 密钥
-     * @param int $timeSlice 指定时间戳，不指定为当前时间
+     * @param string $secret    密钥
+     * @param int    $timeSlice 指定时间戳，不指定为当前时间
      * @return string
      */
     public function getCode($secret, $timeSlice = null)
@@ -76,9 +77,9 @@ class GoogleAuthenticator
 
     /**
      * QR-Code URL
-     * @param $name
-     * @param $secret
-     * @param null $title
+     * @param       $name
+     * @param       $secret
+     * @param null  $title
      * @param array $params
      * @return string
      */
@@ -98,11 +99,12 @@ class GoogleAuthenticator
 
     /**
      * 验证验证码
-     * @param string $secret 密钥
-     * @param string $code 验证码
-     * @param int $discrepancy 验证误差跨度，越小安全性越高，验证码有效时间越短
-     * @param int $currentTimeSlice 指定时间戳
+     * @param string $secret           密钥
+     * @param string $code             验证码
+     * @param int    $discrepancy      验证误差跨度，越小安全性越高，验证码有效时间越短
+     * @param int    $currentTimeSlice 指定时间戳
      * @return bool
+     * @since PHP5.6
      */
     public function verifyCode($secret, $code, $discrepancy = 1, $currentTimeSlice = null)
     {

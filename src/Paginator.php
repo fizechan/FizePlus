@@ -1,6 +1,5 @@
 <?php
 
-
 namespace fize\plus;
 
 /**
@@ -241,10 +240,10 @@ class Paginator
 
     /**
      * 构造函数
-     * @param string $var 分页参数名
-     * @param string $target 目标页面链接
+     * @param string $var        分页参数名
+     * @param string $target     目标页面链接
      * @param string $identifier 页码数标识
-     * @param string $method 分页方式
+     * @param string $method     分页方式
      */
     public function __construct($var = null, $target = null, $identifier = null, $method = null)
     {
@@ -269,7 +268,7 @@ class Paginator
 
     /**
      * 设置目标页面
-     * @param string $target 目标页面
+     * @param string $target     目标页面
      * @param string $identifier 页码数标识
      */
     public function setTarget($target, $identifier = null)
@@ -321,8 +320,8 @@ class Paginator
 
     /**
      * 魔法设置只读参数
-     * @param string $name 参数名
-     * @param mixed $value 参数值
+     * @param string $name  参数名
+     * @param mixed  $value 参数值
      * @return boolean
      */
     public function setConfig($name, $value)
@@ -358,8 +357,8 @@ class Paginator
 
     /**
      * 设置相关模版是否强制显示
-     * @param string $name 模型名
-     * @param bool $value 是否强制显示
+     * @param string $name  模型名
+     * @param bool   $value 是否强制显示
      * @return boolean
      */
     public function setForced($name, $value)

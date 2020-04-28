@@ -1,6 +1,4 @@
 <?php
-/** @noinspection PhpComposerExtensionStubsInspection */
-
 
 namespace fize\plus;
 
@@ -66,7 +64,7 @@ class Captcha
      * 验证验证码是否正确
      * @access public
      * @param string $code 用户验证码
-     * @param string $id 验证码标识
+     * @param string $id   验证码标识
      * @return bool
      */
     public function check($code, $id = '')
